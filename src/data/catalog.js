@@ -275,5 +275,249 @@ export const productsData = [
       { id: 1, user: "Khaled A.", rating: 4, date: "2026-04-14", comment: "Fits perfectly. Real carbon fiber weave is very clean and consistent." }
     ],
     compatibility: ["Mercedes-C-Class", "Mercedes-E-Class", "Mercedes-GLC", "BMW-3 Series", "BMW-5 Series", "BMW-X5"]
+  },
+  {
+    id: "gd-brk-carbon-11",
+    name: "GOLDEN M-Sport Slotted Brake Rotor & Pad Kit",
+    brand: "GOLDEN Braking",
+    category: "exterior",
+    price: 360.00,
+    rating: 4.9,
+    reviewsCount: 67,
+    sku: "GD-BRK-MSPORT-KIT",
+    image: "brakes.jpg",
+    description: "Track-inspired front axle braking upgrade for BMW performance fitments. Includes slotted high-carbon rotors and low-dust ceramic sport pads for stronger bite, cleaner wheels, and more consistent stopping power.",
+    specs: {
+      "Rotor Type": "High-carbon slotted sport rotors",
+      "Pad Compound": "Ceramic low-dust performance blend",
+      "Axle Coverage": "Front axle kit",
+      "Fitment": "BMW M-Sport and M-style brake packages"
+    },
+    reviews: [
+      { id: 1, user: "Omar S.", rating: 5, date: "2026-07-08", comment: "Pedal feel is firmer and the front wheels stay much cleaner than before." }
+    ],
+    compatibility: ["BMW-3 Series", "BMW-5 Series", "BMW-M3"]
+  },
+  {
+    id: "gd-ext-diffuser-12",
+    name: "GOLDEN Gloss Black Rear Diffuser & Quad Exhaust Trim",
+    brand: "GOLDEN Exterior",
+    category: "exterior",
+    price: 220.00,
+    rating: 4.8,
+    reviewsCount: 52,
+    sku: "GD-EXT-DIFF-QD",
+    image: "downpipe.jpg",
+    description: "Aggressive rear styling package with a gloss black diffuser and quad exhaust tip surrounds. Designed to sit at the lower rear bumper line for a cleaner M-performance look.",
+    specs: {
+      "Material": "ABS diffuser with heat-resistant trim finish",
+      "Finish": "Gloss black",
+      "Placement": "Lower rear bumper",
+      "Installation": "Clip-and-screw fitment with bumper-safe hardware"
+    },
+    reviews: [
+      { id: 1, user: "Nader F.", rating: 5, date: "2026-06-29", comment: "The rear end looks much wider and more aggressive now." }
+    ],
+    compatibility: ["BMW-3 Series", "BMW-M3"]
+  },
+  {
+    id: "gd-ext-splitter-13",
+    name: "GOLDEN Gloss Black M-Performance Front Splitter Lip",
+    brand: "GOLDEN Exterior",
+    category: "exterior",
+    price: 190.00,
+    rating: 4.8,
+    reviewsCount: 61,
+    sku: "GD-EXT-FSPL-M3",
+    image: "intake.jpg",
+    description: "Lower front bumper splitter designed for the BMW M3 front fascia. Adds a sharper lower edge, protects the bumper lip, and gives the car a wider motorsport stance.",
+    specs: {
+      "Material": "High-impact ABS",
+      "Finish": "Gloss black",
+      "Placement": "Lower front bumper",
+      "Installation": "Bolt-and-tape fitment with bumper-safe hardware"
+    },
+    reviews: [
+      { id: 1, user: "Hany R.", rating: 5, date: "2026-07-16", comment: "The front end looks lower and more aggressive without scraping everywhere." }
+    ],
+    compatibility: ["BMW-3 Series", "BMW-M3"]
+  },
+  {
+    id: "gd-ext-skirts-14",
+    name: "GOLDEN Carbon Look M-Performance Side Skirt Extensions",
+    brand: "GOLDEN Exterior",
+    category: "exterior",
+    price: 240.00,
+    rating: 4.7,
+    reviewsCount: 48,
+    sku: "GD-EXT-SKIRT-M3",
+    image: "sway_bar.jpg",
+    description: "Pair of side skirt blade extensions for the lower rocker panels. The carbon-look finish visually connects the front splitter and rear diffuser for a complete M-performance exterior kit.",
+    specs: {
+      "Material": "ABS with carbon-look finish",
+      "Package Content": "Left and right side skirt extensions",
+      "Placement": "Lower rocker panels",
+      "Installation": "Screw and adhesive mounting"
+    },
+    reviews: [
+      { id: 1, user: "Fady M.", rating: 5, date: "2026-07-05", comment: "Matches the front lip and diffuser nicely. The side profile looks much cleaner." }
+    ],
+    compatibility: ["BMW-3 Series", "BMW-M3"]
+  },
+
+  // ==================== 3D HOTSPOT MATCHED PARTS ====================
+  {
+    id: "gd-3d-headlight-15",
+    name: "BMW M3 G80 Adaptive Laser Headlight Upgrade",
+    brand: "GOLDEN 3D Fit",
+    category: "lighting",
+    price: 520.00,
+    rating: 4.9,
+    reviewsCount: 44,
+    sku: "GD-3D-G80-HDL",
+    image: "spark_plugs.jpg",
+    description: "A front headlight upgrade matched to the 3D hotspot on the BMW M3 nose. Designed for the G80 headlight area with sharper laser-style projection, bright DRL signature, and error-free control modules.",
+    specs: {
+      "Placement": "Front left and right headlight housings",
+      "Lighting Type": "Laser-style LED projector with DRL strip",
+      "Housing Finish": "Smoked clear lens with black inner trim",
+      "Fitment": "BMW M3 G80 front fascia"
+    },
+    reviews: [
+      { id: 1, user: "Ali K.", rating: 5, date: "2026-07-18", comment: "Matches the front end perfectly and the DRL shape looks much sharper." }
+    ],
+    compatibility: ["BMW-M3"]
+  },
+  {
+    id: "gd-3d-front-splitter-16",
+    name: "BMW M3 G80 Gloss Black Front Splitter Lip",
+    brand: "GOLDEN 3D Fit",
+    category: "exterior",
+    price: 210.00,
+    rating: 4.8,
+    reviewsCount: 39,
+    sku: "GD-3D-G80-FSPL",
+    image: "intake.jpg",
+    description: "A lower front splitter that matches the front bumper hotspot. It sits directly under the M3 front intake line to make the nose look lower, wider, and more aggressive.",
+    specs: {
+      "Placement": "Lower front bumper",
+      "Finish": "Gloss black",
+      "Material": "Flexible ABS lip",
+      "Package Content": "Three-piece front splitter set"
+    },
+    reviews: [
+      { id: 1, user: "Mahmoud E.", rating: 5, date: "2026-07-11", comment: "This is exactly the piece that finishes the front bumper." }
+    ],
+    compatibility: ["BMW-M3"]
+  },
+  {
+    id: "gd-3d-front-brakes-17",
+    name: "BMW M3 G80 Front Performance Brake Package",
+    brand: "GOLDEN 3D Fit",
+    category: "exterior",
+    price: 680.00,
+    rating: 5.0,
+    reviewsCount: 33,
+    sku: "GD-3D-G80-FBRK",
+    image: "brakes.jpg",
+    description: "A front wheel brake package for the hotspot placed on the front wheel assembly. Includes drilled rotors, sport pads, and painted caliper covers for a stronger performance look.",
+    specs: {
+      "Placement": "Front wheel brake area",
+      "Rotor Style": "Drilled and slotted performance rotors",
+      "Pad Type": "Low-dust ceramic sport pads",
+      "Visual Upgrade": "Red M-style caliper cover set"
+    },
+    reviews: [
+      { id: 1, user: "Yassin D.", rating: 5, date: "2026-06-27", comment: "The red calipers behind the wheel make the whole side profile pop." }
+    ],
+    compatibility: ["BMW-M3"]
+  },
+  {
+    id: "gd-3d-trunk-spoiler-18",
+    name: "BMW M3 G80 Carbon Ducktail Trunk Spoiler",
+    brand: "GOLDEN 3D Fit",
+    category: "exterior",
+    price: 260.00,
+    rating: 4.9,
+    reviewsCount: 57,
+    sku: "GD-3D-G80-SPOIL",
+    image: "exhaust.jpg",
+    description: "A carbon ducktail spoiler matched to the hotspot on the trunk edge. It follows the BMW M3 rear deck line and gives the back of the car a clean M-performance profile.",
+    specs: {
+      "Placement": "Rear trunk edge",
+      "Finish": "Gloss carbon look",
+      "Material": "ABS with UV clear coat",
+      "Installation": "Automotive adhesive mounting"
+    },
+    reviews: [
+      { id: 1, user: "Karim N.", rating: 5, date: "2026-07-01", comment: "The rear looks wider and sportier without being too much." }
+    ],
+    compatibility: ["BMW-M3"]
+  },
+  {
+    id: "gd-3d-mirror-caps-19",
+    name: "BMW M3 G80 Carbon M-Horn Mirror Caps",
+    brand: "GOLDEN 3D Fit",
+    category: "exterior",
+    price: 145.00,
+    rating: 4.8,
+    reviewsCount: 46,
+    sku: "GD-3D-G80-MIRR",
+    image: "intake.jpg",
+    description: "Carbon-look M-horn mirror caps matched to the side mirror hotspot. These replace the factory mirror shells and sharpen the side view of the car.",
+    specs: {
+      "Placement": "Left and right side mirrors",
+      "Finish": "Gloss carbon look",
+      "Structure": "Clip-on replacement shell",
+      "Package Content": "Pair of mirror caps"
+    },
+    reviews: [
+      { id: 1, user: "Mostafa A.", rating: 5, date: "2026-07-13", comment: "Small part but it changes the whole character of the side view." }
+    ],
+    compatibility: ["BMW-M3"]
+  },
+  {
+    id: "gd-3d-side-skirts-20",
+    name: "BMW M3 G80 Carbon Side Skirt Blade Extensions",
+    brand: "GOLDEN 3D Fit",
+    category: "exterior",
+    price: 295.00,
+    rating: 4.7,
+    reviewsCount: 35,
+    sku: "GD-3D-G80-SKIRT",
+    image: "sway_bar.jpg",
+    description: "Side skirt blade extensions matched to the lower rocker panel hotspot. They visually connect the front splitter to the rear diffuser and make the M3 side line sit lower.",
+    specs: {
+      "Placement": "Lower side rocker panels",
+      "Finish": "Gloss carbon look",
+      "Package Content": "Left and right skirt blades",
+      "Installation": "Screw and adhesive mounting"
+    },
+    reviews: [
+      { id: 1, user: "Sherif T.", rating: 4, date: "2026-06-22", comment: "Best side profile upgrade after wheels. Clean fit on the lower line." }
+    ],
+    compatibility: ["BMW-M3"]
+  },
+  {
+    id: "gd-3d-rear-diffuser-21",
+    name: "BMW M3 G80 Rear Diffuser With Quad Exhaust Surrounds",
+    brand: "GOLDEN 3D Fit",
+    category: "exterior",
+    price: 340.00,
+    rating: 4.9,
+    reviewsCount: 41,
+    sku: "GD-3D-G80-DIFF",
+    image: "downpipe.jpg",
+    description: "A rear diffuser matched to the lower rear bumper hotspot. The fins and quad exhaust surrounds sit around the M3 rear exhaust area for a more complete performance look.",
+    specs: {
+      "Placement": "Lower rear bumper and exhaust surround",
+      "Finish": "Gloss black with carbon-look fins",
+      "Exhaust Trim": "Quad outlet surrounds",
+      "Installation": "Clip-and-screw fitment"
+    },
+    reviews: [
+      { id: 1, user: "Tarek Z.", rating: 5, date: "2026-07-09", comment: "Now the back finally matches the aggressive front." }
+    ],
+    compatibility: ["BMW-M3"]
   }
 ];
