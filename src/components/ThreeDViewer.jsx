@@ -27,47 +27,65 @@ const hotspots = [
   {
     id: 'hotspot-headlights',
     slot: 'hotspot-headlights',
-    position: '0.65 0.65 1.95',
+    position: '7.4 10.8 34.2',
     normal: '0 0 1',
-    productId: 'gd-lgt-laser-01',
+    productId: 'gd-3d-headlight-15',
     label: 'Laser LED Lenses Upgrade',
     desc: 'Motorsport-grade H7/H4 bi-laser projector headlights'
   },
   {
-    id: 'hotspot-ambient',
-    slot: 'hotspot-ambient',
-    position: '0 1.05 0.1',
-    normal: '0 1 0',
-    productId: 'gd-lgt-ambient-02',
-    label: 'Dynamic Ambient Lighting',
-    desc: 'Symphony App-controlled 16M RGB cabin accent lighting'
+    id: 'hotspot-front-splitter',
+    slot: 'hotspot-front-splitter',
+    position: '0 4.9 37.2',
+    normal: '0 -0.2 1',
+    productId: 'gd-3d-front-splitter-16',
+    label: 'Front Splitter Lip',
+    desc: 'Gloss black lower bumper splitter for the M3 front fascia'
+  },
+  {
+    id: 'hotspot-brakes',
+    slot: 'hotspot-brakes',
+    position: '-15.6 5.8 22.4',
+    normal: '-1 0 0.1',
+    productId: 'gd-3d-front-brakes-17',
+    label: 'Performance Brake Kit',
+    desc: 'High-friction pads and drilled rotors for the front wheel assembly'
   },
   {
     id: 'hotspot-spoiler',
     slot: 'hotspot-spoiler',
-    position: '0 1.03 -2.15',
-    normal: '0 0.5 -0.8',
-    productId: 'gd-ext-spoiler-09',
+    position: '0 15.2 -31.0',
+    normal: '0 0.35 -1',
+    productId: 'gd-3d-trunk-spoiler-18',
     label: 'M-Performance Spoiler',
     desc: 'High-impact ABS trunk wing finished in piano gloss black'
   },
   {
     id: 'hotspot-mirrors',
     slot: 'hotspot-mirrors',
-    position: '-1.05 0.9 0.4',
-    normal: '-1 0 0.2',
-    productId: 'gd-ext-mirror-10',
+    position: '-16.0 15.8 9.0',
+    normal: '-1 0 0.25',
+    productId: 'gd-3d-mirror-caps-19',
     label: 'Carbon Fiber Mirror Caps',
     desc: 'Aggressive M-horns replace standard side mirror covers'
   },
   {
-    id: 'hotspot-steering',
-    slot: 'hotspot-steering',
-    position: '-0.38 0.95 0.45',
-    normal: '0 0 1',
-    productId: 'gd-sea-alcantara-07',
-    label: 'Alcantara Steering Wrap',
-    desc: 'Italian luxury hand-stitched steering wheel wrap with racing top stripe'
+    id: 'hotspot-side-skirt',
+    slot: 'hotspot-side-skirt',
+    position: '-15.0 4.6 -2.5',
+    normal: '-1 -0.1 0',
+    productId: 'gd-3d-side-skirts-20',
+    label: 'Carbon Side Skirts',
+    desc: 'Side blade extensions along the lower rocker panel'
+  },
+  {
+    id: 'hotspot-diffuser',
+    slot: 'hotspot-diffuser',
+    position: '0 6.4 -36.4',
+    normal: '0 -0.15 -1',
+    productId: 'gd-3d-rear-diffuser-21',
+    label: 'Rear Diffuser & Exhaust Trim',
+    desc: 'Gloss black rear diffuser with quad exhaust tip surrounds'
   }
 ];
 
@@ -122,9 +140,10 @@ export default function ThreeDViewer({ activeVehicle, onSelectVehicle, onProduct
   };
 
   const handleForceLoad = () => {
-    setIsLoading(false);
+    if (modelViewerRef.current?.loaded) {
+      setIsLoading(false);
+    }
     setShowForceBtn(false);
-    // Apply color in next tick to allow DOM layout to settle
     setTimeout(() => applyColor(selectedColor), 50);
   };
 
@@ -154,9 +173,6 @@ export default function ThreeDViewer({ activeVehicle, onSelectVehicle, onProduct
       if (!active) return;
       const progressPercent = Math.round((event.detail.totalProgress || 0) * 100);
       setProgress(progressPercent);
-      if (progressPercent >= 100) {
-        onLoad();
-      }
     };
 
     const onError = (error) => {
